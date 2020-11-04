@@ -285,6 +285,7 @@ public class ReentrantReadWriteLock
          */
         static final class ThreadLocalHoldCounter
             extends ThreadLocal<HoldCounter> {
+            @Override
             public HoldCounter initialValue() {
                 return new HoldCounter();
             }
@@ -377,6 +378,7 @@ public class ReentrantReadWriteLock
             return free;
         }
 
+        @Override
         protected final boolean tryAcquire(int acquires) {
             /*
              * Walkthrough:
@@ -393,6 +395,9 @@ public class ReentrantReadWriteLock
             int c = getState();
             int w = exclusiveCount(c);
             if (c != 0) {
+                /**
+                 *  存在读锁或者当前线程不是已经获取写锁得线程
+                 */
                 // (Note: if c != 0 and w == 0 then shared count != 0)
                 if (w == 0 || current != getExclusiveOwnerThread())
                     return false;
@@ -449,6 +454,7 @@ public class ReentrantReadWriteLock
             /*
              * Walkthrough:
              * 1. If write lock held by another thread, fail.
+             * 如果一个写锁被其他线程持有，获取锁失败
              * 2. Otherwise, this thread is eligible for
              *    lock wrt state, so ask if it should block
              *    because of queue policy. If not, try

@@ -11,6 +11,8 @@
     <modules>
         <module>jdk-source</module>
         <module>algorithm</module>
+        <module>gmall-logger</module>
+        <module>es-client</module>
     </modules>
 
 
