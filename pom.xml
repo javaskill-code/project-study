@@ -13,6 +13,9 @@
         <module>algorithm</module>
         <module>gmall-logger</module>
         <module>es-client</module>
+        <module>problem_project</module>
+        <module>Play-with-Data-Structures-master</module>
+        <module>kafka-study</module>
     </modules>
 
 

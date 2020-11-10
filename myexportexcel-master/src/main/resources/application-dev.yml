@@ -1,0 +1,34 @@
+bl:
+   config:
+     eureka:
+        zone: http://localhost:8101/eureka/
+     datasource:
+         jdbcUrl: HLoHJTFX02MFgXIpRiocKwiH/du89nhjtFo1cmsSjDg3RrqqWNhXAwzcFyYbMtVu
+         username: i5Sr5PB6n+JB00+4J7UTbw==
+         password: 7d36UeFOWXaRWMpoicL9ow==
+     aes:
+         password: testC1b5x@61H$8asdqw
+     redis:
+          host: AdbT0ZleyiRHxqcbpoF96g==
+          port: yxAJIZBTQg8O7Nrqu0wdtQ==
+          password: 7d36UeFOWXaRWMpoicL9ow==
+     rabbitmq:
+          host: 172.16.157.242
+          port: 5672
+          username: guest
+          password: guest
+     client:
+          risk: http://trisk.ldxinyong.com
+          collect: http://tcollection.ldxinyong.com
+          user: http://localhost:8203
+     console:
+          env: dev
+     privilege: false
+     message:
+             url: http://localhost:8103
+             signId: 1
+security:
+    basic:
+       enabled: false
+
+

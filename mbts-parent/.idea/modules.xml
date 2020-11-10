@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mbts-cloud-sign/mbts-cloud-sign.iml" filepath="$PROJECT_DIR$/mbts-cloud-sign/mbts-cloud-sign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mbts-gateway/mbts-gateway.iml" filepath="$PROJECT_DIR$/mbts-gateway/mbts-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mbts-parent.iml" filepath="$PROJECT_DIR$/mbts-parent.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,12 @@
+server:
+  port: 80
+
+
+spring:
+  kafka:
+    # 指定kafka代理
+    bootstrap-servers: cm-node01:9092,cm-node02:9092,cm-node03:9092
+    producer:
+      # 指定消息key和消息体的编解码方式
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
